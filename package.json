@@ -1,0 +1,22 @@
+{
+  "name": "uk-tax-theme",
+  "version": "1.0.0",
+  "description": "A static website theme for a accountancy firm. ",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "devDependencies": {
+    "autoprefixer": "^9.6.5",
+    "browserslist": "^4.7.1",
+    "cssnano": "^4.1.10",
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^7.0.1",
+    "gulp-postcss": "^8.0.0",
+    "gulp-rename": "^2.0.0",
+    "gulp-sass": "^4.0.2",
+    "gulp-sourcemaps": "^2.6.5"
+  },
+  "author": "Jafar Salami",
+  "license": "ISC"
+}
