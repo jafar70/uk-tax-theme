@@ -1,0 +1,23 @@
+.why-us{
+  &__grid{
+    display: flex;
+    flex-wrap: wrap;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: space-between;
+    align-items: center;
+    &__item{
+      width: calc(50% - 30px);
+      @media only screen and (max-width: $desk-start) {
+        width: 100%;
+      }
+      p{
+        margin-bottom: 20px;
+      }
+      img{
+        width: 100%;
+        max-width: 100%;
+      }
+    }
+  }
+}

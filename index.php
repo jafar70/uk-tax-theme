@@ -53,6 +53,29 @@
       <a href='#!' class='btn'>Contact Us </a>
     </div>
   </div>
+  
+  <section class="why-us centered-text">
+      <h2>Why Choose UK Tax Pro?</h2>
+    <div class="why-us__grid container">
+      <div class="why-us__grid__item">
+        <p><b>Everyboy has something important to say!</b></p>
+        <p>
+        We meet you face to face and consult before we start working for you. We’ll go into your business and your goals in detail, tailoring your business structure to help you achieve the best. With our accountants working on your behalf you will not have to worry about dealing with HMRC. 
+        </p>  
+      <p>
+        Our advice is clear, friendly, and always offered with the client’s best interests at heart. We like to think that we do more than make the numbers tally and fulfil your legal obligations to the state’s coffers.
+      </p>
+        <p>
+          The other principle we stick to is that we take our work seriously and we hope that you’ll always find us warm, friendly and easy to talk to.
+        </p>
+      </div>
+      
+      <div class="why-us__grid__item">
+        <img src="http://uktaxproltd.co.uk/wp-content/uploads/2019/04/Contact-us.jpg" alt="" >
+      </div>
+    </div>
+  </section>
+  
   <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
   <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
   <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>

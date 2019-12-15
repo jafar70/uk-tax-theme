@@ -3,9 +3,12 @@
 
 @import 'basic/icons';
 @import 'basic/buttons';
-
+@import 'basic/root';
 
 @import 'layout/header';
 @import 'layout/container';
 
 @import 'modules/home-banner';
+@import 'modules/centered-text';
+
+@import 'page/homepage';
