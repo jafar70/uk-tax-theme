@@ -1,0 +1,16 @@
+.btn{
+  padding: 9px 25px;
+  background-color: $blue;
+  border: none;
+  cursor: pointer;
+  -webkit-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+  color: #fff;
+  font-weight: 500;
+  text-decoration: none;
+  font-family: $main-font;
+  
+  &:hover{
+    background-color: $blue-dark;
+  }
+}

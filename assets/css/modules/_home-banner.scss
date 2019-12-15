@@ -1,0 +1,41 @@
+.home-banner{
+  height: 550px;
+  background-size: cover !important;
+  background-position: center !important;
+  background-attachment: fixed !important;
+  display: flex;
+  align-items: center;
+  color: $text-color;
+  font-family: $main-font;
+  @media only screen and (max-width: $desk-start) {
+    text-align: center;
+  }
+  @media only screen and (max-width: $small-mobile-start){
+    height: 430px;
+  }
+  h1{
+    font-size: 55px;
+    line-height: 55px;
+    margin-bottom: 20px;
+    @media only screen and (max-width: $desk-start) {
+      font-size: 45px;
+      line-height: 45px;
+    }
+    @media only screen and (max-width: $small-mobile-start){
+      font-size: 35px;
+      line-height: 35px;
+    }
+  }
+  h2{
+    font-size: 25px;
+    margin-bottom: 20px;
+  }
+  p{
+    font-size: 22px;
+    margin-bottom: 32px;
+  }
+}
+
+
+
+
