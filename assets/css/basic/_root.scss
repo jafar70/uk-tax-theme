@@ -4,4 +4,26 @@ body{
   p{
     color: $text-color;
   }
+  
+  section{
+    h2{
+      &:first-child{
+       font-size: 32px;
+        text-transform: capitalize;
+        text-align: center;
+        margin-bottom: 60px;
+        position: relative;
+        &::after{
+          content: "";
+          position: absolute;
+          top: 50px;
+          left: 50%;
+          margin-left: -25px;
+          width: 50px;
+          height: 4px;
+          background: $blue;
+        } 
+      }
+    }
+  }
 }

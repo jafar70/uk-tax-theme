@@ -21,3 +21,22 @@
     }
   }
 }
+
+.services{
+  &__grid{
+    display: flex;
+    flex-wrap: wrap;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: space-between;
+    align-items: center;
+    &__item{
+      width: calc(33.3% - 20px);
+      @media only screen and (max-width: $desk-start) {
+        width: 100%;
+        margin-bottom: 20px;
+      }
+    }
+  }
+}
+

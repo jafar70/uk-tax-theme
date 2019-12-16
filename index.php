@@ -76,6 +76,39 @@
     </div>
   </section>
   
+  <section class="services">
+    <h2>What We Can Do for You</h2>
+    <div class="container services__grid">
+      <div class="services__grid__item">
+        <div class="card">
+          <img class="card__img" src="assets/img/startup.svg" alt="">
+          <h3 class="card__title">Tax Planning</h3>
+          <p class="card__text">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut quasi itaque omnis excepturi laudantium architecto modi facere delectus reprehenderit 
+          </p>
+        </div>
+      </div>
+      <div class="services__grid__item">
+        <div class="card">
+          <img class="card__img" src="assets/img/tax.svg" alt="">
+          <h3 class="card__title">Tax Planning</h3>
+          <p class="card__text">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut quasi itaque omnis excepturi laudantium architecto modi facere delectus reprehenderit 
+          </p>
+        </div>
+      </div>
+      <div class="services__grid__item">
+        <div class="card">
+          <img class="card__img" src="assets/img/accountacy.svg" alt="">
+          <h3 class="card__title">Tax Planning</h3>
+          <p class="card__text">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut quasi itaque omnis excepturi laudantium architecto modi facere delectus reprehenderit 
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+  
   <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
   <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
   <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
