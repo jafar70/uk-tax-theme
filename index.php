@@ -4,7 +4,9 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="shortcut icon" href="assets/img/uk-tax-pro-logo.png" />
   <title>UK Tax LTD</title>
+  <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
   <link rel="stylesheet" href="assets/css/style.css">
   <link href="https://fonts.googleapis.com/css?family=Hind:400,500,600,700&display=swap" rel="stylesheet">
 </head>
@@ -55,7 +57,7 @@
   </div>
   
   <section class="why-us centered-text">
-      <h2>Why Choose UK Tax Pro?</h2>
+      <h2 class="underline">Why Choose UK Tax Pro?</h2>
     <div class="why-us__grid container">
       <div class="why-us__grid__item">
         <p><b>Everyboy has something important to say!</b></p>
@@ -76,44 +78,99 @@
     </div>
   </section>
   
-  <section class="services">
-    <h2>What We Can Do for You</h2>
+  <section class="services grey-background">
+    <h2 class="underline">What We Can Do for You</h2>
     <div class="container services__grid">
       <div class="services__grid__item">
         <div class="card">
-          <img class="card__img" src="assets/img/startup.svg" alt="">
-          <h3 class="card__title">Tax Planning</h3>
+          <div class="card__img_container">
+            <img class="card__img_container__svg" src="assets/img/startup.svg" alt="">
+          </div>
+          <h3 class="card__title">Business Start Up</h3>
           <p class="card__text">
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut quasi itaque omnis excepturi laudantium architecto modi facere delectus reprehenderit 
           </p>
+          <a class="btn" href="#!">Find out more</a>
         </div>
       </div>
       <div class="services__grid__item">
         <div class="card">
-          <img class="card__img" src="assets/img/tax.svg" alt="">
+          <div class="card__img_container">
+            <img class="card__img_container__svg" src="assets/img/tax.svg" alt="">
+          </div>
           <h3 class="card__title">Tax Planning</h3>
           <p class="card__text">
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut quasi itaque omnis excepturi laudantium architecto modi facere delectus reprehenderit 
           </p>
+          <a class="btn" href="#!">Find out more</a>
         </div>
       </div>
       <div class="services__grid__item">
         <div class="card">
-          <img class="card__img" src="assets/img/accountacy.svg" alt="">
-          <h3 class="card__title">Tax Planning</h3>
+          <div class="card__img_container">
+            <img class="card__img_container__svg" src="assets/img/accountacy.svg" alt="">
+          </div>
+          <h3 class="card__title">Accountancy</h3>
           <p class="card__text">
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut quasi itaque omnis excepturi laudantium architecto modi facere delectus reprehenderit 
           </p>
+          <a class="btn" href="#!">Find out more</a>
         </div>
       </div>
     </div>
+  </section>
+  
+  <section class="testimonials">
+      <h2 class="white-text underline underline--white">Testimonials</h2>
+      <div class="container swiper-container testimonials-container">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide testimonials-slide">
+            <div class="testimonials-slide__item">
+              <h3 class="testimonials-slide__item__slide-name">Jafar Salami</h3>
+              <p class="testimonials-slide__item__slide-text">Worked with individuals within Harwood HR Solutions for some years now. Would highly recommend their services and advice. Competent with integrity are but some of the qualities you would gain from these subject matters experts.</p>
+            </div>
+          </div>
+          <div class="swiper-slide testimonials-slide">
+            <div class="testimonials-slide__item">
+              <h3 class="testimonials-slide__item__slide-name">Jafar Salami</h3>
+              <p class="testimonials-slide__item__slide-text">Worked with individuals within Harwood HR Solutions for some years now. Would highly recommend their services and advice. Competent with integrity are but some of the qualities you would gain from these subject matters experts.</p>
+            </div>
+          </div>
+          <div class="swiper-slide testimonials-slide">
+            <div class="testimonials-slide__item">
+              <h3 class="testimonials-slide__item__slide-name">Jafar Salami</h3>
+              <p class="testimonials-slide__item__slide-text">Worked with individuals within Harwood HR Solutions for some years now. Would highly recommend their services and advice. Competent with integrity are but some of the qualities you would gain from these subject matters experts.</p>
+            </div>
+          </div>
+          <div class="swiper-slide testimonials-slide">
+            <div class="testimonials-slide__item">
+              <h3 class="testimonials-slide__item__slide-name">Jafar Salami</h3>
+              <p class="testimonials-slide__item__slide-text">Worked with individuals within Harwood HR Solutions for some years now. Would highly recommend their services and advice. Competent with integrity are but some of the qualities you would gain from these subject matters experts.</p>
+            </div>
+          </div>
+          <div class="swiper-slide testimonials-slide">
+            <div class="testimonials-slide__item">
+              <h3 class="testimonials-slide__item__slide-name">Jafar Salami</h3>
+              <p class="testimonials-slide__item__slide-text">Worked with individuals within Harwood HR Solutions for some years now. Would highly recommend their services and advice. Competent with integrity are but some of the qualities you would gain from these subject matters experts.</p>
+            </div>
+          </div>
+          <div class="swiper-slide testimonials-slide">
+            <div class="testimonials-slide__item">
+              <h3 class="testimonials-slide__item__slide-name">Jafar Salami</h3>
+              <p class="testimonials-slide__item__slide-text">Worked with individuals within Harwood HR Solutions for some years now. Would highly recommend their services and advice. Competent with integrity are but some of the qualities you would gain from these subject matters experts.</p>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-pagination testimonials__pagination"></div>
+      </div>
   </section>
   
   <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
   <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
   <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 
-
+  <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
+  <script src="assets/js/testimonials-slider.js"></script>
   <script>
     const element = document.getElementById("button");
     const mainmenu = document.getElementById("nav");

@@ -1,0 +1,39 @@
+.testimonials-container{
+  
+  .testimonials-slide{
+    &__item{
+      &__slide-name{
+        margin-bottom: 20px;
+         color: #fff;
+      }
+      &__slide-text{
+        margin: 0 5%;
+         color: #fff;
+        margin-bottom: 20px;
+        @media screen and (max-width: $desk-start) {
+          margin-bottom: 45px;
+        }
+      }
+    }
+  }
+  
+  .testimonials__pagination{
+    bottom: 0 !important;
+    
+  }
+  .swiper-pagination-bullet-active {
+      opacity: 1;
+      background: $red !important;
+  }
+  
+  
+  .swiper-pagination-bullet {
+      width: 15px !important;
+      height: 15px !important;
+      display: inline-block;
+      border-radius: 100%;
+      background: #fff ;
+      opacity: 1 !important;
+  }
+  
+}

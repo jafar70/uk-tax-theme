@@ -1,0 +1,26 @@
+.grey-background{
+  background-color: $grey;
+}
+
+.white-text{
+  color: #fff;
+}
+
+.underline{
+  &::after{
+    content: "";
+    display: block;
+    width: 45px;
+    height: 4px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    background: $blue;
+  } 
+  
+  &--white{
+    &::after{
+      background: #fff;
+    }
+  }
+}
