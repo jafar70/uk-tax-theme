@@ -165,9 +165,51 @@
       </div>
   </section>
   
-  <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-  <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-  <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+  <div class='footer'>
+    <div class="footer__grid container">
+      <div class="footer__grid__item">
+        <img src="assets/img/uk-tax-pro-logo.png" alt="UK Tax Pro Logo">
+        <p>Our team offers the most up-to-date, sustainable manufacturing solutions. teachings of the great explorer of the truth We only source materials from tried and trusted suppliers.</p>
+        <a href="#!" class="default-link">About Us</a>
+      </div>
+      <div class="footer__grid__item">
+        <h3 class="footer__grid__item__title underline underline--left">Services</h3>
+        <ul class="footer__grid__item__list">
+          <li><a href="#!">Business Start Up</a></li>
+          <li><a href="#!">Tax Planning</a></li>
+          <li><a href="#!">Accountancy</a></li>
+        </ul>
+      </div>
+      <div class="footer__grid__item">
+        <h3 class="footer__grid__item__title underline underline--left">Legal</h3>
+        <ul class="footer__grid__item__list">
+          <li><a href="#!">Terms & Conditions</a></li>
+          <li><a href="#!">Privacy Policy</a></li>
+        </ul>
+      </div>
+      <div class="footer__grid__item">
+         <h3 class="footer__grid__item__title underline underline--left">Contact Us</h3>
+         <ul class="footer__grid__item__contact_list">
+           <li><span class="icon icon-clock"></span>119 Rose Lane, Romford, RM6 5NR</li>
+           <li><span class="icon icon-phone"></span>02085990003</li>
+           <li><span class="icon icon-paper-plane"></span>vika.accts@gmail.com</li>
+         </ul>
+      </div>
+    </div>
+    
+  </div>
+  <div class="footer-credits">
+    <div class="footer-credits__grid container">
+      <div class="footer-credits__grid__item">
+        <p>© 2020 UK Tax Pro LTD All Rights Reserved.</p>
+      </div>
+      <div class="footer-credits__grid__item">
+        <p>
+          Created By <a href="https://jafarsalami.co.uk" target="_blank">Jafar Salami</a>
+        </p>
+      </div>
+    </div>
+  </div>
 
   <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
   <script src="assets/js/testimonials-slider.js"></script>

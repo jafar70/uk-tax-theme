@@ -1,0 +1,102 @@
+.footer{
+  background-color: $grey;
+  padding: 60px 0;
+  &__grid{
+    display: flex;
+    flex-wrap: wrap;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: space-between;
+    align-items: flex-start;
+    &__item{
+      width: calc(25% - 20px);
+      @media only screen and (max-width: $desk-start) {
+        width: 100%;
+        margin-bottom: 20px;
+      }
+      img{
+        width: 90px;
+      }
+      p{
+        font-size: 16px;
+        margin-bottom: 10px;
+      }
+      
+      &__title{
+        text-transform: capitalize;
+        font-size: 25px;
+        position: relative;
+        text-align: left;
+        font-weight: 500;
+      }
+      
+      &__list{
+        margin-top: 30px;
+        margin-left: 18px;
+        li{
+          a{
+            text-decoration: none;
+            color: $blue;
+          }
+        }
+      }
+      
+      &__contact_list{
+        margin-top: 30px;
+        list-style-type: none;
+        li{
+          position: relative;
+          padding-left: 30px;
+          margin-bottom: 15px;
+          line-height: 24px;
+          .icon {
+              position: absolute;
+              left: 0px;
+              top: 0px;
+              line-height: 24px;
+              font-size: 17px;
+          }
+        }
+      }
+      
+      .default-link{
+        text-decoration: none;
+        color: $red;
+        line-height: 0;
+        &::after{
+          content: '»';
+          font-size: 36px;
+          line-height: -5px;
+          margin-left: 3px;
+          vertical-align: sub;
+        }
+      }
+    }
+  }
+}
+
+.footer-credits{
+  padding: 10px 0;
+  &__grid{
+    display: flex;
+    flex-wrap: wrap;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: space-between;
+    align-items: center;
+    
+    &__item{
+      width: calc(50% - 20px);
+      @media only screen and (max-width: $desk-start) {
+        width: 100%;
+        margin-bottom: 20px;
+        text-align: center !important;
+      }
+      &:nth-child(2){
+        text-align:right;
+      }
+    }
+  }
+}
+
+

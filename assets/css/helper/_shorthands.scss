@@ -18,6 +18,12 @@
     background: $blue;
   } 
   
+  &--left{
+    &::after{
+     margin: 0; 
+    }
+  }
+  
   &--white{
     &::after{
       background: #fff;
