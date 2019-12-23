@@ -50,6 +50,23 @@
 header {
   padding: 20px 0;
   background-color: white;
+  &.fixed {
+      position: fixed;
+      top:0;
+      width: 100%;
+      z-index: 9999;
+     }
+  @media only screen and (max-width: 1100px) {
+//     padding: 43px 0;
+    padding: 0;
+  }
+  
+  @media only screen and (max-width: $lap-start) {
+      position: fixed;
+      top:0;
+      width: 100%;
+      z-index: 9999;
+  }
   
   .head-container {
     display: flex;
@@ -59,54 +76,250 @@ header {
     margin: 0 auto;
     max-width: 1180px;
     position: relative;
+    &::after{
+          display: block;
+    clear: both;
+    visibility: hidden;
+    line-height: 0;
+    height: 0;
+    }
+    @media only screen and (max-width: 1100px) {
+      display: block;
+    
+    .submenu-button {
+    position: absolute;
+    z-index: 99;
+    right: 0;
+    top: 0;
+    display: block;
+    height: 46px;
+    width: 46px;
+    cursor: pointer;
+}
+      }
   }
 }
 
 .logo {
   cursor: pointer;
   width: 80px;
-}
-
-.nav__links a,{
-  font-family: $main-font;
-  font-weight: 500;
-  color: #222;
-  text-decoration: none;
+  @media only screen and (max-width: 1100px) {
+    width: 60px;
+    position: absolute;
+    top: 0%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, 23%);
+    text-align: center;
+    float: none;
+  }
 }
 
 .nav__links {
   list-style: none;
   display: flex;
+  li{
+    padding: 0px 20px;
+    position: relative;
+    &.has-sub{
+      &:hover{
+          a{
+            &::before{
+              top: 11px;
+              height: 0;
+            }
+          } 
+          ul {
+            li {
+              height: 35px;
+            }
+          }
+        }
+      a{
+        &:hover{
+          &::before,
+          &::after{
+            background: $red;
+          }
+        }
+        &::before{
+          position: absolute;
+          top: 8px;
+          right: 12px;
+          display: block;
+          width: 2px;
+          height: 8px;
+          background: $text-color;
+          content: "";
+          -webkit-transition: all 0.25s ease;
+          -ms-transition: all 0.25s ease;
+          transition: all 0.25s ease;
+        }
+        &::after{
+          position: absolute;
+          top: 11px;
+          right: 9px;
+          width: 8px;
+          height: 2px;
+          display: block;
+          background: $text-color;
+          content: "";
+        }
+      }
+      ul{
+        overflow-y: hidden;
+        max-height: 500px;
+//         transition-property: all;
+//         transition-duration: .5s;
+        width: 170px;
+        &.closed{
+          position: absolute;
+          max-height: 0;
+          display: block;
+          padding-top: 25px;
+          li{
+            a{
+              &::after,
+              &::before{
+                display: none !important;
+              }
+            }
+          }
+        }
+        li{
+          height: 0;
+          -webkit-transition: all 0.25s ease;
+          -ms-transition: all 0.25s ease;
+          background: #fff;
+          transition: all 0.25s ease;
+          padding: 0;
+          
+          a{
+              border-bottom: 1px solid rgba(150, 150, 150, 0.15);
+              padding: 11px 80px 11px 11px;
+              width: 170px;
+            
+              font-size: 15px;
+              text-decoration: none;
+              color: $text-color;
+          }
+        }
+      }
+    }
+    a{
+      font-family: $main-font;
+      font-weight: 500;
+      color: #222;
+      text-decoration: none;
+      transition: all 0.3s ease 0s; 
+      &:hover{
+         color: $red;
+      }
+    }
+  }
+  
+  @media only screen and (max-width: 1100px) {
+    display: none;
+        overflow-y: hidden;
+    position: relative;
+        overflow-y: hidden;
+    max-height: 500px;
+    transition-property: all;
+    transition-duration: .5s;
+    width: 100%;
+    &.test{
+          display: inline-block;
+    margin-bottom: -4px;
+    }
+    &.closed{
+          max-height: 0;
+    display: block;
+    }
+    li{
+          border: 0;
+    list-style: none;
+      padding: 0px;
+    line-height: 1;
+    display: block;
+    position: relative;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+      &.has-sub{
+        a{
+          padding-right: 30px;
+          width: 100% !important;
+          padding-left: 17px !important;
+          &::after{
+            position: absolute;
+            top: 22px;
+            right: 11px;
+            width: 8px;
+            height: 2px;
+            display: block;
+            background: $text-color;
+            content: "";
+          }
+          &::before{
+            position: absolute;
+            top: 19px;
+            right: 14px;
+            display: block;
+            width: 2px;
+            height: 8px;
+            background: $text-color;
+            content: "";
+            -webkit-transition: all 0.25s ease;
+            -ms-transition: all 0.25s ease;
+            transition: all 0.25s ease;
+          }
+        }
+        
+        ul{
+          width: 100%;
+          li{
+            a{
+              &::after,
+              &::before{
+                display: none !important;
+              }
+            }
+          }
+        }
+        
+        &:hover{
+          a{
+            &::before{
+              top: 23px;
+              height: 0;
+            }
+          } 
+        }
+      }
+      a{
+        padding: 17px;
+    font-size: 16px;
+    letter-spacing: 1px;
+    text-decoration: none;
+    color: $text-color;
+    font-weight: 700;
+            display: block;
+      }
+    }
+  }
 }
 
-.nav__links li {
-  padding: 0px 20px;
+
+#cssmenu ul ul {
+  position: absolute;
+  left: -9999px;
 }
-
-.nav__links li a {
-  transition: all 0.3s ease 0s;
-}
-
-.nav__links li a:hover {
-  color: $red;
-}
-
-.cta {
-//   padding: 9px 25px;
-//   background-color: $red;
-//   border: none;
-// //   border-radius: 50px;
-//   cursor: pointer;
-//   transition: all 0.3s ease 0s;
-//   color: #fff;
-//   font-weight: 500;
-//   text-decoration: none;
-//   font-family: $main-font;
-
-}
-
-.cta:hover {
-//   background-color: rgba(0, 136, 169, 0.8);
+#cssmenu ul ul li {
+  height: 0;
+  -webkit-transition: all 0.25s ease;
+  -ms-transition: all 0.25s ease;
+  background: #333;
+  transition: all 0.25s ease;
 }
 
 /* Mobile Nav */
@@ -115,28 +328,93 @@ header {
   display: none;
 }
 
-
-@media screen and (max-height: 450px) {
-  .overlay a {
-    font-size: 20px;
-  }
-  .overlay .close {
-    font-size: 40px;
-    top: 15px;
-    right: 35px;
+.button {
+    width: 46px;
+    height: 46px;
+    position: absolute;
+    cursor: pointer;
+    z-index: 12399994;
+    top: 0%;
+    right: 50%;
+    margin-right: -52.3%;
+    transform: translate(0%, 50%);
+  
+    &::after {
+      position: absolute;
+      top: 22px;
+      right: 20px;
+      display: block;
+      height: 4px;
+      width: 20px;
+      border-top: 2px solid $blue;
+      border-bottom: 2px solid $blue;
+      content: "";
+    }
+  
+    &::before{
+      -webkit-transition: all 0.3s ease;
+      -ms-transition: all 0.3s ease;
+      transition: all 0.3s ease;
+      position: absolute;
+      top: 16px;
+      right: 20px;
+      display: block;
+      height: 2px;
+      width: 20px;
+      background: $blue;
+      content: "";
+    }
+  
+  &.menu-opened{
+    &::after{
+      -webkit-transition: all 0.3s ease;
+      -ms-transition: all 0.3s ease;
+      transition: all 0.3s ease;
+      top: 23px;
+      border: 0;
+      height: 2px;
+      width: 19px;
+      background: $blue;
+      -webkit-transform: rotate(45deg);
+      -moz-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+      -o-transform: rotate(45deg);
+      transform: rotate(45deg);
+    }
+    
+    &::before{
+      top: 23px;
+      background: $blue;
+      width: 19px;
+      -webkit-transform: rotate(-45deg);
+      -moz-transform: rotate(-45deg);
+      -ms-transform: rotate(-45deg);
+      -o-transform: rotate(-45deg);
+      transform: rotate(-45deg);
+    }
   }
 }
 
+
 @media only screen and (max-width: 1100px) {
-  .nav__links,
-  .cta {
-    display: none;
-  }
   .menu {
     display: initial;
   }
-  .logo{
-    margin: auto;
+
+  .cta{
+    display: none;
   }
 }
+
+#head-mobile {
+    display: none;
+  @media only screen and (max-width: 1100px) {
+        display: block;
+    padding: 43px;
+    color: #ddd;
+    font-size: 12px;
+    font-weight: 700;
+  }
+}
+
 
