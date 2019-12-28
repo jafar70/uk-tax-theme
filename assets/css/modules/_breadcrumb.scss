@@ -1,0 +1,15 @@
+.breadcrumb{
+    background: #fff;
+    padding: 17px 0;
+    border-bottom: 1px solid #cecece;
+  a{
+    color: $text-color;
+    text-decoration: none;
+    &:hover{
+      text-decoration: underline;
+    }
+    &:last-child{
+      color: $blue;
+    }
+  }
+}

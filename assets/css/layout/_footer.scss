@@ -21,6 +21,10 @@
       }
       img{
         width: 90px;
+        &.accreditation-logo{
+          width: 60px;
+          
+        }
       }
       p{
         font-size: 16px;
@@ -61,6 +65,7 @@
       &__contact_list{
         margin-top: 30px;
         list-style-type: none;
+        margin-left: -5px;
         li{
           position: relative;
           padding-left: 30px;

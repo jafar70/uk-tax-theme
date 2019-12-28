@@ -30,3 +30,10 @@
     }
   }
 }
+
+.mt-119{
+  margin-top: 119px;
+  @media only screen and (max-width: $lap-start){
+    margin-top: 0;
+  }
+}

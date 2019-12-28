@@ -76,17 +76,20 @@ function findOffset(element) {
 }
 
 window.onload = function () {
-  var stickyHeader = document.getElementById('sticky');
-  var headerOffset = findOffset(stickyHeader);
+  const stickyHeader = document.getElementById('sticky');
+  const headerOffset = findOffset(stickyHeader);
+  const headerMarginTop = document.getElementsByTagName("body")[0];
   
   window.onscroll = function() {
     // body.scrollTop is deprecated and no longer available on Firefox
-    var bodyScrollTop = document.documentElement.scrollTop || document.body.scrollTop;
+    const bodyScrollTop = document.documentElement.scrollTop || document.body.scrollTop;
 
     if (bodyScrollTop > headerOffset.top) {
       stickyHeader.classList.add('fixed');
+      headerMarginTop.classList.add('mt-119');
     } else {
       stickyHeader.classList.remove('fixed');
+      headerMarginTop.classList.remove('mt-119');
     }
   };
 };

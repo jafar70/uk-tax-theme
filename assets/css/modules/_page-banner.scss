@@ -1,0 +1,14 @@
+.page-banner{
+  background-position: center !important;
+  background-size: cover !important;
+  min-height: 330px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  @media only screen and (max-width: $lap-start) {
+    margin-top: 83px;
+  }
+  &__title{
+    color: $text-color;
+  }
+}

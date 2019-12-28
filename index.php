@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="shortcut icon" href="assets/img/uk-tax-pro-logo.png" />
   <title>UK Tax LTD</title>
-  <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.1/css/swiper.min.css">
   <link rel="stylesheet" href="assets/css/style.css">
   <link href="https://fonts.googleapis.com/css?family=Hind:400,500,600,700&display=swap" rel="stylesheet">
 </head>
@@ -29,18 +29,18 @@
 
   <header id="sticky">
     <div class="head-container">
-      <img class="logo" src="assets/img/uk-tax-pro-logo.png" alt="logo">
+      <img src="assets/img/uk-tax-pro-logo.png" class="logo lazyload" alt="UK Tax Pro Logo">
       <div id="head-mobile"></div>
       <div id='button' class='menu button'></div>
         <ul id='nav' class="nav__links">
-          <li><a href="#">Home</a></li>
-          <li><a href="#">About Us </a></li>
-          <li><a href="#">Business Start Up </a></li>
-          <li><a href="#">Tax Planning </a></li>
-          <li><a href="#">Accountancy </a></li>
-          <li><a href="#">Contact Us </a></li>
+          <li><a href="/">Home</a></li>
+          <li><a href="about-us.php">About Us </a></li>
+          <li><a href="business-start-up.php">Business Start Up </a></li>
+          <li><a href="tax-planning.php">Tax Planning </a></li>
+          <li><a href="accountancy.php">Accountancy </a></li>
+          <li><a href="contact-us.php">Contact Us </a></li>
         </ul>
-      <a class="cta btn" href="#">Get a Quote</a>
+      <a class="cta btn" href="#">Request a Call Back</a>
     </div>
   </header>
 
@@ -72,7 +72,7 @@
       </div>
       
       <div class="why-us__grid__item">
-        <img src="http://uktaxproltd.co.uk/wp-content/uploads/2019/04/Contact-us.jpg" alt="" >
+        <img data-src="assets/img/Contact-us.jpg" alt="" loading="lazy"  class="lazyload">
       </div>
     </div>
   </section>
@@ -83,7 +83,7 @@
       <div class="services__grid__item">
         <div class="card">
           <div class="card__img_container">
-            <img class="card__img_container__svg" src="assets/img/startup.svg" alt="">
+            <img class="card__img_container__svg lazyload" data-src="assets/img/startup.svg" alt="" loading="lazy">
           </div>
           <h3 class="card__title">Business Start Up</h3>
           <p class="card__text">
@@ -95,7 +95,7 @@
       <div class="services__grid__item">
         <div class="card">
           <div class="card__img_container">
-            <img class="card__img_container__svg" src="assets/img/tax.svg" alt="">
+            <img class="card__img_container__svg lazyload" data-src="assets/img/tax.svg" alt="" loading="lazy">
           </div>
           <h3 class="card__title">Tax Planning</h3>
           <p class="card__text">
@@ -107,7 +107,7 @@
       <div class="services__grid__item">
         <div class="card">
           <div class="card__img_container">
-            <img class="card__img_container__svg" src="assets/img/accountacy.svg" alt="">
+            <img class="card__img_container__svg lazyload" data-src="assets/img/accountacy.svg" alt="" loading="lazy">
           </div>
           <h3 class="card__title">Accountancy</h3>
           <p class="card__text">
@@ -172,16 +172,16 @@
   <div class='footer' style='background: linear-gradient(0deg, rgba(255, 255, 255,0.85), rgba(255, 255, 255,0.85)),url(assets/img/footer-bg.jpg)'>
     <div class="footer__grid container">
       <div class="footer__grid__item">
-        <img src="assets/img/uk-tax-pro-logo.png" alt="UK Tax Pro Logo">
+        <img data-src="assets/img/uk-tax-pro-logo.png" class="lazyload" alt="UK Tax Pro Logo" loading="lazy">
         <p>Our team offers the most up-to-date, sustainable manufacturing solutions. teachings of the great explorer of the truth We only source materials from tried and trusted suppliers.</p>
-        <a href="#!" class="default-link">About Us</a>
+        <a href="about-us.php" class="default-link">About Us</a>
       </div>
       <div class="footer__grid__item">
         <h3 class="footer__grid__item__title underline underline--left">Services</h3>
         <ul class="footer__grid__item__list">
-          <li><a href="#!">Business Start Up</a></li>
-          <li><a href="#!">Tax Planning</a></li>
-          <li><a href="#!">Accountancy</a></li>
+          <li><a href="business-start-up.php">Business Start Up </a></li>
+          <li><a href="tax-planning.php">Tax Planning </a></li>
+          <li><a href="accountancy.php">Accountancy </a></li>
         </ul>
       </div>
       <div class="footer__grid__item">
@@ -198,6 +198,7 @@
            <li><span class="icon icon-phone"></span>02085990003</li>
            <li><span class="icon icon-paper-plane"></span>vika.accts@gmail.com</li>
          </ul>
+        <img data-src="assets/img/aat-logo.svg" class="lazyload accreditation-logo" loading="lazy" alt="AAT logo" width='60px'>
       </div>
     </div>
     
@@ -215,11 +216,12 @@
     </div>
   </div>
 
-  <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.1/js/swiper.min.js"></script>
   <script src="assets/js/testimonials-slider.js"></script>
   <script src="assets/js/nav.js"></script>
   <script src='https://maps.googleapis.com/maps/api/js?key=AIzaSyDbT5LW7F19Ynrs9gGvWk3PoAzsW-xCJcQ'></script>
   <script src="assets/js/google-maps.js"></script>
+  <script src='assets/js/lazyload.js'></script>
 </body>
 
 </html>
