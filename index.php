@@ -40,7 +40,7 @@
           <li><a href="accountancy.php">Accountancy </a></li>
           <li><a href="contact-us.php">Contact Us </a></li>
         </ul>
-      <a class="cta btn" href="#">Request a Call Back</a>
+      <a class="cta btn" id="open-modal" data-triger="modal-1">Request a Call Back</a>
     </div>
   </header>
 
@@ -164,10 +164,39 @@
       </div>
   </section>
   
-  <!-- Google map code from EZ Map - https://ezmap.co -->
-<div id='ez-map'></div>
-<!-- End of EZ Map code - https://ezmap.co -->
+  <div id='ez-map'></div>
 
+  <div class="modal-wrap" id="modal-1">
+      <div id='modal-container' class="modal-container">
+        <div class="modal-header">
+          <h2 class="modal-title">Request a Call Back</h2>
+          <button class="close-modal">×</button>
+        </div>
+        <div class="modal-content">
+          <p>We would like to ensure you that all data provided through this form, will remain strictly confidential.</p>
+          <form action="" class="form row">
+          <div class="form__col-100">
+            <input type="text" name="name" value="" size="40" class="input-text" id="first-name" placeholder="Name">
+          </div>
+          <div class="form__col-100">
+            <input type="email" name="email" value="" size="40" class="input-text" id="email" placeholder="E-mail Address">
+          </div>
+          <div class="form__col-100">
+            <input type="tel" name="telephone" value="" size="40" class="input-text" id="telephone" placeholder="Telephone Number">
+          </div>
+          <div class="form__col-100">
+            <textarea name="your-message" cols="40" rows="10" class="input-text" id="message" placeholder="Message"></textarea>
+          </div>
+          <div class="form__col-100">
+           <input type="submit" value="Send" class="btn">
+         </div>
+        </form>
+        </div>
+        <div class="modal-footer">
+          <p>We will contact you within one business day.</p>
+        </div>
+      </div>
+    </div>
   
   <div class='footer' style='background: linear-gradient(0deg, rgba(255, 255, 255,0.85), rgba(255, 255, 255,0.85)),url(assets/img/footer-bg.jpg)'>
     <div class="footer__grid container">
@@ -222,6 +251,7 @@
   <script src='https://maps.googleapis.com/maps/api/js?key=AIzaSyDbT5LW7F19Ynrs9gGvWk3PoAzsW-xCJcQ'></script>
   <script src="assets/js/google-maps.js"></script>
   <script src='assets/js/lazyload.js'></script>
+  <script src='assets/js/modal.js'></script>
 </body>
 
 </html>
