@@ -1,0 +1,30 @@
+#myBtn {
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color: $blue;
+  color: white;
+  cursor: pointer;
+  padding: 5px 13px;
+  border-radius: 50%;
+  visibility: hidden;
+    opacity: 0;
+  transition: all .25s ease-in-out;
+  &:hover {
+    background-color: $blue-dark;
+  }
+  &.show {
+    visibility: visible;
+    opacity: 1;
+  }
+  
+  &.hide {
+    visibility: hidden;
+    opacity: 0;
+  }
+}
+

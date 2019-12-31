@@ -198,6 +198,10 @@
       </div>
     </div>
   
+  <div class="close-canvas"></div>
+  <button onclick="topFunction()" id="myBtn" title="Go to top">&#129121;</button>
+
+  
   <div class='footer' style='background: linear-gradient(0deg, rgba(255, 255, 255,0.85), rgba(255, 255, 255,0.85)),url(assets/img/footer-bg.jpg)'>
     <div class="footer__grid container">
       <div class="footer__grid__item">
@@ -246,12 +250,8 @@
   </div>
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.1/js/swiper.min.js"></script>
-  <script src="assets/js/testimonials-slider.js"></script>
-  <script src="assets/js/nav.js"></script>
   <script src='https://maps.googleapis.com/maps/api/js?key=AIzaSyDbT5LW7F19Ynrs9gGvWk3PoAzsW-xCJcQ'></script>
-  <script src="assets/js/google-maps.js"></script>
-  <script src='assets/js/lazyload.js'></script>
-  <script src='assets/js/modal.js'></script>
+  <script src='assets/js/script.min.js'></script>
 </body>
 
 </html>
