@@ -108,7 +108,7 @@
     </div>
   
   <div class="close-canvas"></div>
-  <button id="myBtn" title="Go to top">&#129121;</button>
+  <button id="myBtn" title="Go to top"><i class='icon-arrow-up'></i></button>
 
   
   <div class='footer' style='background: linear-gradient(0deg, rgba(255, 255, 255,0.85), rgba(255, 255, 255,0.85)),url(assets/img/footer-bg.jpg)'>

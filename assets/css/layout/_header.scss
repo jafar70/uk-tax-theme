@@ -8,6 +8,9 @@
   background-color: $blue;
   padding: 10px 0;
   color: #fff;
+  position: absolute;
+    top: 0;
+    width: 100%;
   @media only screen and (max-width: $lap-start) {
     display: none;
   }
@@ -65,6 +68,10 @@
 header {
   background-color: white;
   box-shadow: 0px 3px 6px 0px rgba(20, 20, 20, 0.05);
+  position: absolute; 
+  top: 46px; 
+  width: 100%;
+  z-index: 99999;
   &.fixed {
       position: fixed;
       top:0;
