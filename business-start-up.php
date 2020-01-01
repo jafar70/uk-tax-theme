@@ -13,34 +13,34 @@
 
 <body>
 
-  <div class="top-nav">
+ <div class="top-nav">
     <div class="top-nav__grid">
       <ul class="top-nav__grid__item top-nav__grid__item--contact_list">
-        <li><i class="icon-phone"></i> 02085990003</li>
-        <li><i class="icon-paper-plane"></i>vika.accts@gmail.com</li>
+        <li><a href="tel:02085990003"><i class="icon-phone"></i>02085990003</a></li>
+        <li><a href="mailto:vika.accts@gmail.com"><i class="icon-paper-plane"></i>vika.accts@gmail.com</a></li>
         <li><i class='icon-clock'></i> Mon - Fri: 9:30 - 19:30</li>
       </ul>
       <ul class="top-nav__grid__item top-nav__grid__item--social_list">
-        <li><i class='icon-twitter'></i></li>
-        <li><i class="icon-instagram"></i></li>
+        <li><a href="#!"><i class='icon-facebook-official'></i></a></li>
+        <li><a href="#!"><i class="icon-linkedin"></i></a></li>
       </ul>
     </div>
   </div>
 
   <header id="sticky">
     <div class="head-container">
-      <img src="assets/img/uk-tax-pro-logo.png" class="logo lazyload" alt="UK Tax Pro Logo">
+      <a href="/"><img src="assets/img/uk-tax-pro-logo.png" class="logo lazyload" alt="UK Tax Pro Logo"></a>
       <div id="head-mobile"></div>
       <div id='button' class='menu button'></div>
         <ul id='nav' class="nav__links">
           <li><a href="/">Home</a></li>
           <li><a href="about-us.php">About Us </a></li>
-          <li><a href="business-start-up.php">Business Start Up </a></li>
+          <li class='current-menu-item'><a href="business-start-up.php">Business Start Up </a></li>
           <li><a href="tax-planning.php">Tax Planning </a></li>
           <li><a href="accountancy.php">Accountancy </a></li>
           <li><a href="contact-us.php">Contact Us </a></li>
         </ul>
-      <a class="cta btn" href="#">Request a Call Back</a>
+      <a class="cta btn" id="open-modal" data-triger="modal-1">Request a Call Back</a>
     </div>
   </header>
 
@@ -75,6 +75,42 @@
     </div>
   </section>
   
+  <div class="modal-wrap" id="modal-1">
+      <div id='modal-container' class="modal-container">
+        <div class="modal-header">
+          <h2 class="modal-title">Request a Call Back</h2>
+          <button class="close-modal">×</button>
+        </div>
+        <div class="modal-content">
+          <p>We would like to ensure you that all data provided through this form, will remain strictly confidential.</p>
+          <form action="" class="form row">
+          <div class="form__col-100">
+            <input type="text" name="name" value="" size="40" class="input-text" id="first-name" placeholder="Name">
+          </div>
+          <div class="form__col-100">
+            <input type="email" name="email" value="" size="40" class="input-text" id="email" placeholder="E-mail Address">
+          </div>
+          <div class="form__col-100">
+            <input type="tel" name="telephone" value="" size="40" class="input-text" id="telephone" placeholder="Telephone Number">
+          </div>
+          <div class="form__col-100">
+            <textarea name="your-message" cols="40" rows="10" class="input-text" id="message" placeholder="Message"></textarea>
+          </div>
+          <div class="form__col-100">
+           <input type="submit" value="Send" class="btn">
+         </div>
+        </form>
+        </div>
+        <div class="modal-footer">
+          <p>We will contact you within one business day.</p>
+        </div>
+      </div>
+    </div>
+  
+  <div class="close-canvas"></div>
+  <button id="myBtn" title="Go to top">&#129121;</button>
+
+  
   <div class='footer' style='background: linear-gradient(0deg, rgba(255, 255, 255,0.85), rgba(255, 255, 255,0.85)),url(assets/img/footer-bg.jpg)'>
     <div class="footer__grid container">
       <div class="footer__grid__item">
@@ -100,10 +136,14 @@
       <div class="footer__grid__item">
          <h3 class="footer__grid__item__title underline underline--left">Contact Us</h3>
          <ul class="footer__grid__item__contact_list">
-           <li><span class="icon icon-clock"></span>119 Rose Lane, Romford, RM6 5NR</li>
-           <li><span class="icon icon-phone"></span>02085990003</li>
-           <li><span class="icon icon-paper-plane"></span>vika.accts@gmail.com</li>
+           <li><span class="icon icon-home"></span>119 Rose Lane, Romford, RM6 5NR</li>
+           <li><a href="tel:02085990003"><span class="icon icon-phone"></span> 02085990003</a></li>
+          <li><a href="mailto:vika.accts@gmail.com"><span class="icon icon-paper-plane"></span>vika.accts@gmail.com</a></li>
          </ul>
+        <ul class="social-media">
+          <li><a href="#!"><i class='icon-facebook-official'></i></a></li>
+          <li><a href="#!"><i class="icon-linkedin"></i></a></li>
+        </ul>
         <img data-src="assets/img/aat-logo.svg" class="lazyload accreditation-logo" loading="lazy" alt="AAT logo" width='60px'>
       </div>
     </div>
@@ -115,19 +155,16 @@
         <p>© 2020 UK Tax Pro LTD All Rights Reserved.</p>
       </div>
       <div class="footer-credits__grid__item">
-        <p>
+<!--         <p>
           Created By <a href="https://jafarsalami.co.uk" target="_blank">Jafar Salami</a>
-        </p>
+        </p> -->
       </div>
     </div>
   </div>
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.1/js/swiper.min.js"></script>
-  <script src="assets/js/testimonials-slider.js"></script>
-  <script src="assets/js/nav.js"></script>
   <script src='https://maps.googleapis.com/maps/api/js?key=AIzaSyDbT5LW7F19Ynrs9gGvWk3PoAzsW-xCJcQ'></script>
-  <script src="assets/js/google-maps.js"></script>
-  <script src='assets/js/lazyload.js'></script>
+  <script src='assets/js/script.min.js'></script>
 </body>
 
 </html>

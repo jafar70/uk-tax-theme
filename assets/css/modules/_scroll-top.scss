@@ -6,7 +6,7 @@
   font-size: 18px;
   border: none;
   outline: none;
-  background-color: $blue;
+  background-color: $red;
   color: white;
   cursor: pointer;
   padding: 5px 13px;
@@ -15,7 +15,7 @@
     opacity: 0;
   transition: all .25s ease-in-out;
   &:hover {
-    background-color: $blue-dark;
+    background-color: $red-dark;
   }
   &.show {
     visibility: visible;

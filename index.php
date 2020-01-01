@@ -16,24 +16,24 @@
   <div class="top-nav">
     <div class="top-nav__grid">
       <ul class="top-nav__grid__item top-nav__grid__item--contact_list">
-        <li><i class="icon-phone"></i> 02085990003</li>
-        <li><i class="icon-paper-plane"></i>vika.accts@gmail.com</li>
+        <li><a href="tel:02085990003"><i class="icon-phone"></i>02085990003</a></li>
+        <li><a href="mailto:vika.accts@gmail.com"><i class="icon-paper-plane"></i>vika.accts@gmail.com</a></li>
         <li><i class='icon-clock'></i> Mon - Fri: 9:30 - 19:30</li>
       </ul>
       <ul class="top-nav__grid__item top-nav__grid__item--social_list">
-        <li><i class='icon-twitter'></i></li>
-        <li><i class="icon-instagram"></i></li>
+        <li><a href="#!"><i class='icon-facebook-official'></i></a></li>
+        <li><a href="#!"><i class="icon-linkedin"></i></a></li>
       </ul>
     </div>
   </div>
 
   <header id="sticky">
     <div class="head-container">
-      <img src="assets/img/uk-tax-pro-logo.png" class="logo lazyload" alt="UK Tax Pro Logo">
+      <a href="/"><img src="assets/img/uk-tax-pro-logo.png" class="logo lazyload" alt="UK Tax Pro Logo"></a>
       <div id="head-mobile"></div>
       <div id='button' class='menu button'></div>
         <ul id='nav' class="nav__links">
-          <li><a href="/">Home</a></li>
+          <li class='current-menu-item'><a href="/">Home</a></li>
           <li><a href="about-us.php">About Us </a></li>
           <li><a href="business-start-up.php">Business Start Up </a></li>
           <li><a href="tax-planning.php">Tax Planning </a></li>
@@ -51,7 +51,7 @@
       <p>
         We can do it all!
       </p>
-      <a href='#!' class='btn'>Contact Us </a>
+      <a href='contact-us.php' class='btn'>Contact Us </a>
     </div>
   </div>
   
@@ -199,7 +199,7 @@
     </div>
   
   <div class="close-canvas"></div>
-  <button onclick="topFunction()" id="myBtn" title="Go to top">&#129121;</button>
+  <button id="myBtn" title="Go to top">&#129121;</button>
 
   
   <div class='footer' style='background: linear-gradient(0deg, rgba(255, 255, 255,0.85), rgba(255, 255, 255,0.85)),url(assets/img/footer-bg.jpg)'>
@@ -227,10 +227,14 @@
       <div class="footer__grid__item">
          <h3 class="footer__grid__item__title underline underline--left">Contact Us</h3>
          <ul class="footer__grid__item__contact_list">
-           <li><span class="icon icon-clock"></span>119 Rose Lane, Romford, RM6 5NR</li>
-           <li><span class="icon icon-phone"></span>02085990003</li>
-           <li><span class="icon icon-paper-plane"></span>vika.accts@gmail.com</li>
+           <li><span class="icon icon-home"></span>119 Rose Lane, Romford, RM6 5NR</li>
+           <li><a href="tel:02085990003"><span class="icon icon-phone"></span> 02085990003</a></li>
+          <li><a href="mailto:vika.accts@gmail.com"><span class="icon icon-paper-plane"></span>vika.accts@gmail.com</a></li>
          </ul>
+        <ul class="social-media">
+          <li><a href="#!"><i class='icon-facebook-official'></i></a></li>
+          <li><a href="#!"><i class="icon-linkedin"></i></a></li>
+        </ul>
         <img data-src="assets/img/aat-logo.svg" class="lazyload accreditation-logo" loading="lazy" alt="AAT logo" width='60px'>
       </div>
     </div>
@@ -242,9 +246,9 @@
         <p>© 2020 UK Tax Pro LTD All Rights Reserved.</p>
       </div>
       <div class="footer-credits__grid__item">
-        <p>
+<!--         <p>
           Created By <a href="https://jafarsalami.co.uk" target="_blank">Jafar Salami</a>
-        </p>
+        </p> -->
       </div>
     </div>
   </div>

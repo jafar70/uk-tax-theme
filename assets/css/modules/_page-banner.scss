@@ -8,11 +8,13 @@
   justify-content: center;
   @media only screen and (max-width: $lap-start) {
     margin-top: 83px;
+    min-height: 250px;
   }
   &__title{
     color: $text-color;
     text-align: center;
     padding: 0 20px;
-        line-height: 40px;
+        line-height: 48px;
+        font-size: 48px;
   }
 }

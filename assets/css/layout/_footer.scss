@@ -23,6 +23,7 @@
       }
       img{
         width: 90px;
+        margin-bottom: 10px;
         &.accreditation-logo{
           width: 60px;
           
@@ -50,6 +51,9 @@
             text-decoration: none;
             color: $text-color;
             line-height: 0;
+            &:hover{
+              text-decoration: underline;
+            }
           }
           &::before {
             content: "\2022";
@@ -73,14 +77,21 @@
           padding-left: 30px;
           margin-bottom: 15px;
           line-height: 24px;
-          .icon {
+          a{
+            color: $text-color;
+            text-decoration: none;
+            &:hover{
+              text-decoration: underline;
+            }
+          }
+            .icon {
               position: absolute;
               left: 0px;
               top: 0px;
               line-height: 24px;
               font-size: 17px;
               color: $red;
-          }
+            }
         }
       }
       
@@ -90,10 +101,24 @@
         line-height: 0;
         &::after{
           content: '»';
-          font-size: 36px;
-          line-height: -5px;
+          font-size: 38px;
           margin-left: 3px;
           vertical-align: sub;
+        }
+      }
+      
+      .social-media{
+        margin-left: 0;
+            margin-bottom: 15px;
+        li{
+          display: inline;
+          a{
+            font-size: 18px;
+            color: $red;
+            &:hover{
+              color: $red-dark;
+            }
+          }
         }
       }
     }

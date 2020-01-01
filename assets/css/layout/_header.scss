@@ -28,18 +28,32 @@
       &:not(:last-child){
       margin-right: 20px;    
       } 
-      i{
+        a{
+          color: #fff;
+          text-decoration: none;
+          &:hover{
+            text-decoration: underline;
+          }
+          i{
         color: $red ;
       }
-        
+        }
+        i{
+        color: $red ;
+      }
         }
       &--contact_list{
 
   }
   &--social_list{
     li{
-      i{
-        color: #fff !important;
+      a{
+       i{
+        color: #fff;
+        &:hover{
+          color: darken(#fff, 10%);
+        }
+      } 
       }
     }
   }  
@@ -124,6 +138,11 @@ header {
   margin: 0;
   li{
     position: relative;
+    &.current-menu-item{
+      a{
+         color: $red;
+      }
+    }
     &.has-sub{
       &:hover{
           a{
@@ -252,6 +271,7 @@ header {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
+      border-top: solid 1px #f0f0f0;
       &.has-sub{
         a{
           padding-right: 30px;
@@ -309,7 +329,7 @@ header {
     letter-spacing: 1px;
     text-decoration: none;
     color: $text-color;
-    font-weight: 700;
+    font-weight: 500;
             display: block;
       }
     }
