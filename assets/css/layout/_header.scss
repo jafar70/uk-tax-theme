@@ -46,8 +46,23 @@
       }
         }
       &--contact_list{
-
-  }
+        li{
+          a{
+            i{
+              background: white;
+              border-radius: 4px;
+              margin-right: 5px;
+              padding: 1px 3px 0px;
+            }
+          }
+          i{
+              background: white;
+              border-radius: 4px;
+              margin-right: 3px;
+              padding: 1px 3px 0px;
+            }
+        }
+      }
   &--social_list{
     li{
       a{
@@ -125,7 +140,7 @@ header {
 .logo {
   cursor: pointer;
   width: 80px;
-  padding: 20px 0;
+  padding: 20px 0 10px;
   @media only screen and (max-width: 1100px) {
     width: 60px;
     position: absolute;
